@@ -1,0 +1,23 @@
+Selenium Server commands
+
+A list of all the commands available. To use one, run `java -jar selenium.jar
+commandName`.
+
+  completion    Generate shell autocompletions
+  distributor   Adds this server as the distributor in a selenium grid.
+  hub           A grid hub, composed of sessions, distributor, and router.
+  info          Prints information for commands and topics.
+  node          Adds this server as a Node in the Selenium Grid.
+  router        Creates a router to front the selenium grid.
+  sessionqueue  Adds this server as the new session queue in a selenium grid.
+  sessions      Adds this server as the session map in a selenium grid.
+  standalone    The selenium server, running everything in-process.
+
+For each command, run with `--help` for command-specific help
+
+Use the `--ext` flag before the command name to specify an additional classpath
+to use with the server (for example, to provide additional commands, or to
+provide additional driver implementations). For example:
+
+  java -jar selenium.jar --ext example.jar:dir standalone --port 1234
+
